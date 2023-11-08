@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96a4c700ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Huy Phung</span> from DePauw University</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------about------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/DSCF3816.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About me</h1>
+                <p> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ex vitae lorem vestibulum cursus. Donec scelerisque congue sapien, ut ultrices purus lacinia ut. Praesent bibendum est in laoreet tempus. Nullam et sagittis mi. Pellentesque sit amet enim metus. Maecenas sit amet ante interdum, faucibus neque in, imperdiet velit.</p>
+
+                <div class="tab-text">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Software Engineering</span><br>Back-end developement</li>
+                        <li><span>Software Engineering</span><br>Back-end developement</li>
+                        <li><span>Software Engineering</span><br>Back-end developement</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2</span><br>Back-end developement</li>
+                        <li><span>2</span><br>Back-end developement</li>
+                        <li><span>2</span><br>Back-end developement</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>3</span><br>Back-end developement</li>
+                        <li><span>3</span><br>Back-end developement</li>
+                        <li><span>3</span><br>Back-end developement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------service------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-chalkboard"></i>
+                <h2>Project 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus leo, suscipit at quam id, viverra sagittis quam. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-envelope"></i>
+                <h2>Project 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus leo, suscipit at quam id, viverra sagittis quam.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Project 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus leo, suscipit at quam id, viverra sagittis quam.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------javascript------------- -->
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
