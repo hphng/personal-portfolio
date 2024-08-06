@@ -9,7 +9,6 @@ body {
     color: white;
 }
 
-.main-content {
-    height: 100vh;
+.main-content{
     border: 2px solid red;
 }

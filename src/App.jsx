@@ -1,7 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from './pages/LandingPage'
-import navbar from './components/navbar'
+import NavBar from './components/navbar'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <div>
       <LandingPage />
       <div className='main-content'>
-
+        <NavBar />
       </div>
     </div>
   )
