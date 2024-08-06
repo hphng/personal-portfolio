@@ -1,0 +1,23 @@
+#tsparticles {
+    z-index: -1;
+}
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.landing-page .introduction {
+    color: #c4543d;
+}
+
+.landing-page .introduction h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
