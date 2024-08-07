@@ -6,7 +6,7 @@ import myResume from '../../../public/Resume.pdf'
 
 const HomePage = () => {
   return (
-    <div className='home-page-container'>
+    <div className='home-page-container' id='home'>
       <Container fluid>
         <Row className='row'>
           <Col md={5}>
