@@ -5,9 +5,10 @@ import { tsParticles } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import { loadLightInteraction } from "@tsparticles/interaction-light"
-import LandingPage from './pages/LandingPage'
-import NavBar from './components/navbar'
 import { mainContentParticles } from './utils/tsParticlesOptions';
+import LandingPage from './pages/LandingPage'
+import NavBar from './components/NavBar'
+import HomePage from './pages/HomePage';
 
 function App() {
   const [ init, setInit ] = useState(false);
@@ -33,7 +34,7 @@ function App() {
   return (
     <div>
       <LandingPage />
-      <div className='main-content'>
+      <div className='main-nav-content'>
         <NavBar />
         <div className="canvas">
           <Particles
@@ -42,6 +43,9 @@ function App() {
             particlesLoaded={particlesLoaded}
             options={mainContentParticles}
           />
+        </div>
+        <div className="main-content">
+          <HomePage />
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
 
 
 .landing-page .introduction {
-    color: #c4543d;
+    color: var(--highlight-text-color);
     position: absolute;
 }
 
