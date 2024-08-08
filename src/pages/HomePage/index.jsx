@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 import { Col, Row, Container, Button } from 'react-bootstrap' 
 import Huy from '../../assets/Huy_rmbg.png'
-import myResume from '../../../public/Resume.pdf'
+import myResume from '../../../src/assets/Resume.pdf'
 
 const HomePage = () => {
   return (
