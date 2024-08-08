@@ -1,0 +1,41 @@
+.about-container {
+    height: 80vh;
+    color: white;
+    display: flex;
+    padding-top: 80px;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.about-title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    font-size: 1.25rem;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.about-image img {
+    height: 300px;
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid white;
+}

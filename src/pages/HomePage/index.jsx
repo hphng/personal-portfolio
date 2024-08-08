@@ -7,9 +7,8 @@ import myResume from '../../../public/Resume.pdf'
 const HomePage = () => {
   return (
     <div className='home-page-container' id='home'>
-      <Container fluid>
         <Row className='row'>
-          <Col md={5}>
+          <Col md={6}>
             <div className="home-text">
               <div className='home-intro'>Hi, my name is</div>
               <div className='home-name'>Henry Phung</div>
@@ -29,13 +28,12 @@ const HomePage = () => {
               </h2>
             </div>
           </Col>
-          <Col md={7}>
-            <div className="home-image">
-              <img src={Huy} alt="Henry Phung" />
+          <Col md={6}>
+            <div className="right">
+              <h1>Something is here</h1>
             </div>
           </Col>
         </Row>
-      </Container>
       {/* <div className="a">
         <h1>under col row</h1>
       </div> */}

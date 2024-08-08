@@ -9,6 +9,8 @@ import { mainContentParticles } from './utils/tsParticlesOptions';
 import LandingPage from './pages/LandingPage'
 import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import SkillsPage from './pages/SkillsPage';
 
 function App() {
   const [ init, setInit ] = useState(false);
@@ -46,6 +48,8 @@ function App() {
         </div>
         <div className="main-content">
           <HomePage />
+          <AboutPage />
+          <SkillsPage />
         </div>
       </div>
     </div>
