@@ -27,4 +27,11 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    color: #2b0808;
+}
+
+.skills-toggle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }

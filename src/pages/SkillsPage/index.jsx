@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './index.css';
 import html from '../../assets/skills/html.svg';
 import css from '../../assets/skills/css.svg';
@@ -14,15 +14,15 @@ import R from '../../assets/skills/R.svg';
 import cplusplus from '../../assets/skills/cplusplus.svg';
 import tableau from '../../assets/skills/tableau.svg';
 import vue from '../../assets/skills/vue.svg';
-import SkillIcon from '../../components/SkillIcon';
 
-const SkillsPage = () => {
-  return (
-    <div className='skills-container' id="skills">
-      <div className="skills-text">
-        <h1 className='skills-title'>Skills</h1>
-        <p>Here are some of the skills I have acquired through my education and work experience.</p>
-      </div>
+import SkillIcon from '../../components/SkillIcon';
+import TagSphere from '../../components/TagSphere';
+import Switch from 'react-switch';
+
+const ToggleContent = ({toggle}) => {
+  const size = 75;
+  if(toggle) {
+    return (
       <div className="skills-icon">
         <div className="skills-row">
           <SkillIcon icon={html} name="html" />
@@ -49,6 +49,65 @@ const SkillsPage = () => {
           <SkillIcon icon={vue} name="vue" />
         </div>
       </div>
+    )
+  } else {
+    return (
+      <div className="skills-sphere">
+      <TagSphere
+        texts={[
+          <img width={size} height={size} src={css} />,
+          <img width={size} height={size} src={bootstrap}  />,
+          <img width={size} height={size} src={git}/>,
+          <img width={size} height={size} src={docker}/>,
+          <img width={size} height={size} src={javascript}/>,
+          <img width={size} height={size} src={postgresql}/>,
+          <img width={size} height={size} src={react}/>,
+          <img width={size} height={size} src={mongoDB}/>,
+          <img width={size} height={size} src={node}/>,
+          <img width={size} height={size} src={R}/>,
+          <img width={size} height={size} src={cplusplus}/>,
+          <img width={size} height={size} src={tableau}/>,
+          <img width={size} height={size} src={vue}/>,
+          <img width={size} height={size} src={html}  />
+        ]}
+        maxSpeed={7}
+        initialSpeed={32}
+        initialDirection={135}
+        keepRollingAfterMouseOut={false}
+        useContainerInlineStyles={true}
+        fullWidth={true}
+        fullHeight={false}
+        radius= {300}
+      />
+    </div>
+    )
+  }
+}
+
+const SkillsPage = () => {
+
+  const [toggle, setToggle] = useState(false);
+  const onToggle = () => {
+    setToggle(!toggle);
+  }
+
+  return (
+    <div className='skills-container' id="skills">
+      <div className="skills-text">
+        <h1 className='skills-title'>Skills</h1>
+        <p>Here are some of the skills I have acquired through my education and work experience.</p>
+      </div>
+      <div className="skills-toggle">
+        <Switch 
+          onChange={onToggle} 
+          checked={toggle}
+          uncheckedIcon={false}
+          checkedIcon={false}
+          onColor='#c4543d'
+          offColor= '#9cf0ee' 
+        />
+      </div>
+      <ToggleContent toggle={toggle} />
     </div>
   )
 }
