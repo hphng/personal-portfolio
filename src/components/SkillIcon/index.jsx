@@ -16,7 +16,7 @@ const SkillIcon = ({icon, name}) => {
       onMouseEnter={onHover}
       onMouseLeave={offHover}
     >
-      {hover ? <div className='skill-icon-title'>{name}</div> : <img className='skill-icon-image' src={icon} alt={name} />}
+      {hover ? <div className='skill-icon-title'>{name}</div> : <img className='skill-icon-image' src={icon} alt={name} title={name} />}
     </div>
   )
 }

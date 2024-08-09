@@ -55,20 +55,20 @@ const ToggleContent = ({toggle}) => {
       <div className="skills-sphere">
       <TagSphere
         texts={[
-          <img width={size} height={size} src={css} />,
-          <img width={size} height={size} src={bootstrap}  />,
-          <img width={size} height={size} src={git}/>,
-          <img width={size} height={size} src={docker}/>,
-          <img width={size} height={size} src={javascript}/>,
-          <img width={size} height={size} src={postgresql}/>,
-          <img width={size} height={size} src={react}/>,
-          <img width={size} height={size} src={mongoDB}/>,
-          <img width={size} height={size} src={node}/>,
-          <img width={size} height={size} src={R}/>,
-          <img width={size} height={size} src={cplusplus}/>,
-          <img width={size} height={size} src={tableau}/>,
-          <img width={size} height={size} src={vue}/>,
-          <img width={size} height={size} src={html}  />
+          <img className='sphere-image' width={size} height={size} src={css} />,
+          <img className='sphere-image' width={size} height={size} src={bootstrap}  />,
+          <img className='sphere-image' width={size} height={size} src={git}/>,
+          <img className='sphere-image' width={size} height={size} src={docker}/>,
+          <img className='sphere-image' width={size} height={size} src={javascript}/>,
+          <img className='sphere-image' width={size} height={size} src={postgresql}/>,
+          <img className='sphere-image' width={size} height={size} src={react}/>,
+          <img className='sphere-image' width={size} height={size} src={mongoDB}/>,
+          <img className='sphere-image' width={size} height={size} src={node}/>,
+          <img className='sphere-image' width={size} height={size} src={R}/>,
+          <img className='sphere-image' width={size} height={size} src={cplusplus}/>,
+          <img className='sphere-image' width={size} height={size} src={tableau}/>,
+          <img className='sphere-image' width={size} height={size} src={vue}/>,
+          <img className='sphere-image' width={size} height={size} src={html}  />
         ]}
         maxSpeed={7}
         initialSpeed={32}
