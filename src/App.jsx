@@ -37,7 +37,7 @@ function App() {
     <div>
       <LandingPage />
       <div className='main-nav-content'>
-        <NavBar />
+        {/* <NavBar /> */}
         <div className="canvas">
           <Particles
             className='main-tsparticles'
