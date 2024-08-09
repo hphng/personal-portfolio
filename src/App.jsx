@@ -11,6 +11,7 @@ import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
+import ExperiencePage from './pages/ExperiencePage';
 
 function App() {
   const [ init, setInit ] = useState(false);
@@ -50,6 +51,7 @@ function App() {
           <HomePage />
           <AboutPage />
           <SkillsPage />
+          <ExperiencePage />
         </div>
       </div>
     </div>
