@@ -1,6 +1,42 @@
 .exp-container {
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 50px;
-    border: 2px solid red;
-    height: 80vh;
+}
+
+.exp-title {
+    font-size: 4rem;
+    padding-left: 50px;
+}
+
+.exp-work {
+    border: 4px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.exp-line {
+    border-left: 4px solid red;
+    position: absolute;
+    left: 15%;
+    width: 100%;
+    height: 100%;
+}
+.job {
+    width: 60%;
+    padding: 20px;
+    margin: 20px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.job:hover {
+    transform:translateX(30px);
+    transition: transform 0.5s ease;
 }
