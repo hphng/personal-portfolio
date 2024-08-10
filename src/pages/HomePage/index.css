@@ -1,97 +1,102 @@
 .home-page-container {
-    color: white;
-    height: 80vh;
+  color: white;
+  height: 80vh;
 }
 
 .row {
-    height: 100vh;
+  height: 100vh;
 }
 
 .home-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-left: 50px;
 }
 
 .home-intro {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .home-name {
-    font-size: 5rem;
-    line-height: 0.8;
-    font-weight: 900;
-    color: var(--highlight-text-color);
+  font-size: 5rem;
+  line-height: 0.8;
+  font-weight: 900;
+  color: var(--highlight-text-color);
 }
 
 .home-job {
-    width: 600px;
-    margin-top: 20px;
-    font-size: 3rem;
+  width: 600px;
+  margin-top: 20px;
+  font-size: 3rem;
 }
 
 .home-words {
-    display: inline;
-    text-indent: 10px;
+  display: inline;
+  text-indent: 10px;
 }
 
 .home-words span {
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    color: #f8f8f8;
-    animation: rotateWord 9s linear infinite 0s;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  color: #1ebc9a;
+  animation: rotateWord 9s linear infinite 0s;
 }
 
 .home-words span:nth-child(2) {
-    animation-delay: 3s;
+  animation-delay: 3s;
 }
-  
+
 .home-words span:nth-child(3) {
-    animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 .home-title {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .resume-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    background-color: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 @keyframes rotateWord {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    20% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-    40% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-    50% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    80% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-}
+  0% {
+    opacity: 0;
+  }
 
+  10% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -104,7 +104,7 @@ const SkillsPage = () => {
           uncheckedIcon={false}
           checkedIcon={false}
           onColor='#c4543d'
-          offColor= '#9cf0ee' 
+          offColor= '#1ebc9a' 
         />
       </div>
       <ToggleContent toggle={toggle} />
