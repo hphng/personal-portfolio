@@ -6,7 +6,7 @@ import myResume from '../../../src/assets/Resume.pdf'
 
 const HomePage = () => {
   return (
-    <div className='home-page-container' id='home'>
+    <section className='home-page-container' id='home'>
         <Row className='row'>
           <Col md={6}>
             <div className="home-text">
@@ -40,7 +40,7 @@ const HomePage = () => {
       {/* <div className="home-image">
         <h1>Home image goes here</h1>
       </div> */}
-    </div>
+    </section>
   )
 }
 

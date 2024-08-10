@@ -92,7 +92,7 @@ const SkillsPage = () => {
   }
 
   return (
-    <div className='skills-container' id="skills">
+    <section className='skills-container' id="skills">
       <div className="skills-text">
         <h1 className='skills-title'>Skills</h1>
         <p>Here are some of the skills I have acquired through my education and work experience.</p>
@@ -108,7 +108,7 @@ const SkillsPage = () => {
         />
       </div>
       <ToggleContent toggle={toggle} />
-    </div>
+    </section>
   )
 }
 

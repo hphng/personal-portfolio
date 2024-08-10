@@ -8,7 +8,7 @@ const LandingPage = () => {
     console.log(container);
   };
   return (
-    <div className='landing-page'>
+    <section className='landing-page'>
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
@@ -18,7 +18,7 @@ const LandingPage = () => {
         <h1>My name is Huy Phung</h1>
         <h2>See my portfolio?</h2>
       </div>
-    </div>
+    </section>
   )
 }
 

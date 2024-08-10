@@ -3,7 +3,7 @@ import './index.css'
 import Huy from '../../assets/Huy_rmbg.png'
 const AboutPage = () => {
   return (
-    <div className='about-container' id='about'>
+    <section className='about-container' id='about'>
       <div className="about-left">
         <h1 className='about-title'>About Me</h1>
         <div className="about-text">
@@ -17,7 +17,7 @@ const AboutPage = () => {
       <div className="about-image about-right">
         <img src={Huy} alt="Henry Phung" />
       </div>
-    </div>
+    </section>
   )
 }
 
