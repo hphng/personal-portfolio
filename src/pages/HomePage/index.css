@@ -1,17 +1,28 @@
 .home-page-container {
   color: white;
-  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
 
-.row {
-  height: 100vh;
+.home-left {
+  flex: 1.5;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   padding-left: 50px;
 }
 

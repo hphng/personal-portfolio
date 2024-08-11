@@ -42,7 +42,6 @@ const ExperiencePage = () => {
     <section className='exp-container' id="experience">
       <div className="exp-title">Experience</div>
       <div className="exp-work">
-        <div className="exp-line"></div>
         {work.map((job) => (
           <div className="job" date={job.date} key={job.id}>
             <div className="job-company-date">
@@ -50,8 +49,6 @@ const ExperiencePage = () => {
               <span className='job-location'>{job.location}</span>
             </div>
             <div className="job-title">{job.title}</div>
-            {/* <div className="job-date">{job.date}</div> */}
-            {/* <div className="job-location">{job.location}</div> */}
             <ul className="job-description">
               {job.description.map((desc) => (
                 <li key={desc}>{desc}</li>

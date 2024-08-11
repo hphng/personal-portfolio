@@ -12,6 +12,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
 import ExperiencePage from './pages/ExperiencePage';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
   const [ init, setInit ] = useState(false);
@@ -52,6 +53,7 @@ function App() {
           <AboutPage />
           <SkillsPage />
           <ExperiencePage />
+          <ProjectPage />
         </div>
       </div>
     </div>
