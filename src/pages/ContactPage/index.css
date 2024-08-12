@@ -1,0 +1,21 @@
+.contact-container {
+    color: white;
+    padding: 80px 0 0 50px;
+}
+
+.contact-header{
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form input, .contact-form textarea,
+.contact-form input:focus, .contact-form textarea:focus {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+

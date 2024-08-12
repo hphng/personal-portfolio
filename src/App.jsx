@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ProjectPage from './pages/ProjectPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   const [ init, setInit ] = useState(false);
@@ -54,6 +55,7 @@ function App() {
           <SkillsPage />
           <ExperiencePage />
           <ProjectPage />
+          <ContactPage  />
         </div>
       </div>
     </div>
