@@ -108,12 +108,13 @@
 
 .project-github{
     background-color: #0d6efd;
+    margin-left: 1rem;
 }
 
-.project-button:hover {
+/* .project-button:hover {
     transform: scale(1.05);
     transition: all 0.5s ease;
-}
+} */
 
 @media (max-width: 1450px) {
     /* .project-container {
