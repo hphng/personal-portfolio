@@ -14,6 +14,7 @@ import SkillsPage from './pages/SkillsPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from './pages/ContactPage';
+import Footer from './components/Footer';
 
 function App() {
   const [ init, setInit ] = useState(false);
@@ -37,7 +38,7 @@ function App() {
     console.log(container);
   };
   return (
-    <div>
+    <div className='app-container'>
       <LandingPage />
       <div className='main-nav-content'>
         <NavBar />
@@ -57,6 +58,7 @@ function App() {
           <ProjectPage />
           <ContactPage  />
         </div>
+        <Footer />
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import {Button, Card} from 'react-bootstrap'
+import {Button, Card, Container} from 'react-bootstrap'
 import huyVideo from '../../assets/projects/huy.mp4'
 import finbud from '../../assets/projects/finbud.png'
 import musicApp from '../../assets/projects/music-app.png'
