@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import Huy from '../../assets/Huy_rmbg.png'
+import Skills from '../../components/Skills'
 const AboutPage = () => {
   return (
     <section className='about-container' id='about'>
@@ -14,8 +14,8 @@ const AboutPage = () => {
           </p>
       </div>
     </div>
-      <div className="about-image about-right">
-        <img src={Huy} alt="Henry Phung" />
+      <div className="about-right">
+        <Skills />
       </div>
     </section>
   )
