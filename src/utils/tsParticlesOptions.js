@@ -29,7 +29,7 @@ const landingPageParticles = {
         size: {
             value: {
                 min: 5,
-                max: 25,
+                max: 15,
             },
         },
         rotate: {
@@ -85,21 +85,21 @@ const landingPageParticles = {
     },
     particles: {
         number: {
-            value: 0,
+            value: 8,
             density: {
                 enable: true,
             },
         },
         color: {
-            value: "#fff",
+            value: "#e64f4f",
             animation: {
                 enable: true,
-                speed: 20,
+                speed: 10,
                 sync: true,
             },
         },
         shape: {
-            type: "square",
+            type: ["square", "circle"],
         },
         opacity: {
             value: 1,
@@ -111,7 +111,7 @@ const landingPageParticles = {
             },
         },
         rotate: {
-            value: 0,
+            value: 10,
             direction: "clockwise",
             animation: {
                 speed: 5,
@@ -119,7 +119,7 @@ const landingPageParticles = {
             },
         },
         move: {
-            enable: false,
+            enable: true,
             speed: 6,
             direction: "none",
         },
@@ -132,7 +132,7 @@ const landingPageParticles = {
             },
             onClick: {
                 enable: true,
-                mode: "push",
+                mode: "repulse",
             },
         },
         modes: {
