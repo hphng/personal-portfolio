@@ -53,33 +53,33 @@ const ToggleContent = ({toggle}) => {
   } else {
     return (
       <div className="skills-sphere">
-      <TagSphere
-        texts={[
-          <img className='sphere-image' width={size} height={size} src={css} />,
-          <img className='sphere-image' width={size} height={size} src={bootstrap}  />,
-          <img className='sphere-image' width={size} height={size} src={git}/>,
-          <img className='sphere-image' width={size} height={size} src={docker}/>,
-          <img className='sphere-image' width={size} height={size} src={javascript}/>,
-          <img className='sphere-image' width={size} height={size} src={postgresql}/>,
-          <img className='sphere-image' width={size} height={size} src={react}/>,
-          <img className='sphere-image' width={size} height={size} src={mongoDB}/>,
-          <img className='sphere-image' width={size} height={size} src={node}/>,
-          <img className='sphere-image' width={size} height={size} src={R}/>,
-          <img className='sphere-image' width={size} height={size} src={cplusplus}/>,
-          <img className='sphere-image' width={size} height={size} src={tableau}/>,
-          <img className='sphere-image' width={size} height={size} src={vue}/>,
-          <img className='sphere-image' width={size} height={size} src={html}  />
-        ]}
-        maxSpeed={7}
-        initialSpeed={32}
-        initialDirection={135}
-        keepRollingAfterMouseOut={false}
-        useContainerInlineStyles={true}
-        fullWidth={false}
-        fullHeight={false}
-        radius= {250}
-      />
-    </div>
+        <TagSphere
+          texts={[
+            <img className='sphere-image' width={size} height={size} src={css} />,
+            <img className='sphere-image' width={size} height={size} src={bootstrap}  />,
+            <img className='sphere-image' width={size} height={size} src={git}/>,
+            <img className='sphere-image' width={size} height={size} src={docker}/>,
+            <img className='sphere-image' width={size} height={size} src={javascript}/>,
+            <img className='sphere-image' width={size} height={size} src={postgresql}/>,
+            <img className='sphere-image' width={size} height={size} src={react}/>,
+            <img className='sphere-image' width={size} height={size} src={mongoDB}/>,
+            <img className='sphere-image' width={size} height={size} src={node}/>,
+            <img className='sphere-image' width={size} height={size} src={R}/>,
+            <img className='sphere-image' width={size} height={size} src={cplusplus}/>,
+            <img className='sphere-image' width={size} height={size} src={tableau}/>,
+            <img className='sphere-image' width={size} height={size} src={vue}/>,
+            <img className='sphere-image' width={size} height={size} src={html}  />
+          ]}
+          maxSpeed={7}
+          initialSpeed={32}
+          initialDirection={135}
+          keepRollingAfterMouseOut={false}
+          useContainerInlineStyles={true}
+          fullWidth={false}
+          fullHeight={false}
+          // radius= {10%}
+        />
+      </div>
     )
   }
 }

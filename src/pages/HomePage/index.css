@@ -119,3 +119,29 @@
   border-radius: 50%;
   border: 2px solid white;
 }
+
+@media (max-width: 1000px) {
+  .home-page-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .home-right img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-job {
+    padding-left: 20%;
+    border: 2px solid red;
+  }
+
+}
