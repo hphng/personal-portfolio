@@ -6,7 +6,7 @@ import { faEnvelope, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { Button } from 'react-bootstrap'
 const Footer = () => {
   return (
-    <footer className='footer-container'>
+    <footer className='footer-container bg-dark'>
       <Button href="#home" variant='danger'>
           <FontAwesomeIcon icon={faChevronUp} />
       </Button>
