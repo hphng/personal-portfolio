@@ -2,6 +2,7 @@ import React from 'react'
 import Particles from "@tsparticles/react";
 import './index.css'
 import { landingPageParticles } from "../../utils/tsParticlesOptions";
+import { Button } from 'react-bootstrap'
 
 const LandingPage = () => {
   const particlesLoaded = (container) => {
@@ -15,8 +16,10 @@ const LandingPage = () => {
         options={landingPageParticles}
       />
       <div className="introduction">
-        <h1>My name is Huy Phung</h1>
-        <h2>See my portfolio?</h2>
+        <h1>Welcome to my portfolio!</h1>
+        <Button className='btn btn-outline-danger' href="#home">
+          View my works
+        </Button>
       </div>
     </section>
   )
