@@ -1,8 +1,9 @@
 import React from 'react'
 import './index.css'
 import { Col, Row, Container, Button } from 'react-bootstrap' 
-import Huy from '../../assets/Huy_rmbg.png'
 import myResume from '../../../src/assets/Resume.pdf'
+import  Skills from '../../components/Skills'
+import Huy from '../../assets/Huy_rmbg.png'
 
 const HomePage = () => {
   return (
@@ -29,7 +30,8 @@ const HomePage = () => {
       </div>
 
       <div className="home-right">
-        <h1>Something is here</h1>
+        <img src={Huy} alt="Henry Phung" />
+        {/* <Skills /> */}
       </div>
       {/* <div className="a">
         <h1>under col row</h1>

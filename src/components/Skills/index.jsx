@@ -15,8 +15,8 @@ import cplusplus from '../../assets/skills/cplusplus.svg';
 import tableau from '../../assets/skills/tableau.svg';
 import vue from '../../assets/skills/vue.svg';
 
-import SkillIcon from '../../components/SkillIcon';
-import TagSphere from '../../components/TagSphere';
+import SkillIcon from '../SkillIcon';
+import TagSphere from '../TagSphere';
 import Switch from 'react-switch';
 
 const ToggleContent = ({toggle}) => {

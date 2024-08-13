@@ -111,3 +111,11 @@
     opacity: 0;
   }
 }
+
+.home-right img {
+  height: 300px;
+  width: 300px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
