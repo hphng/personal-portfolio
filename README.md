@@ -1,8 +1,43 @@
-# React + Vite
+# SWE Internship Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Software Engineering Internship Portfolio! This repository showcases the work, projects, and experiences I've gained during my software engineering internship. It highlights the technical skills I've developed, the challenges I've overcome, and the contributions I've made to various projects!
 
-Currently, two official plugins are available:
+## Portfolio Content
+- About me & Skills
+- Projects
+    1. Finbud - a financial website
+    2. Melify - a music app
+    3. Box chat - a real-time chat application
+    4. AsciiCam - a camera prototype project
+- Experiences
+- Contact
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to run
+
+*You can follow this [link](https://huyphung.netlify.app/) or run the project locally:*
+
+Each project in this portfolio can be run individually. Below are the general instructions for setting up and running the projects.
+
+### Prerequisites:
+Make sure you have the following installed on your system:
+- Nodejs & npm (for javascript projects)
+- Git (for cloning repo)
+- Docker (for project use Docker)
+- Netlify CLI (for deployment)
+
+### Clone the Repository:
+Clone this repository to your local machine:
+```
+git clone https://github.com/your-github-username/your-repo-name.git
+cd your-repo-name
+```
+
+### Running the Repository:
+```
+npm run start
+```
+
+## Contact Information
+Feel free to reach out to me if you have any questions, feedback, or just want to connect!
+- Email: huyphung3103@gmail.com
+- LinkedIn: https://www.linkedin.com/in/huyphung2025
