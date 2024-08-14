@@ -86,7 +86,7 @@ const ProjectPage = () => {
               <Card className="project-info">
                 <Card.Body>
                   <Card.Title className='project-title'>{project.title}</Card.Title>
-                  <Card.Subtitle className="project-subtitle text-light">{project.subtitle}</Card.Subtitle>
+                  <Card.Subtitle className="project-subtitle">{project.subtitle}</Card.Subtitle>
                   <Card.Text className="project-description">{project.description}</Card.Text>
                   <Button 
                     disabled={project.live === 'NULL'}

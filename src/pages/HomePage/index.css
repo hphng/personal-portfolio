@@ -1,5 +1,5 @@
 .home-page-container {
-  color: white;
+  color: antiquewhite;
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -117,7 +117,8 @@
   width: 300px;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid antiquewhite;
+  background-color: antiquewhite;
 }
 
 @media (max-width: 1000px) {

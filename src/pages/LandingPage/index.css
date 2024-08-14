@@ -26,7 +26,7 @@
 
 .landing-page .btn {
     background-color: var(--highlight-color);
-    color: white;
+    color: antiquewhite;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 2rem;
