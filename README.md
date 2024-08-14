@@ -5,10 +5,10 @@ Welcome to my Software Engineering Internship Portfolio! This repository showcas
 ## Portfolio Content
 - About me & Skills
 - Projects
-    1. Finbud - a financial website
-    2. Melify - a music app
-    3. Box chat - a real-time chat application
-    4. AsciiCam - a camera prototype project
+    - Finbud - a financial website
+    - Melify - a music app
+    - Box chat - a real-time chat application
+    - AsciiCam - a camera prototype project
 - Experiences
 - Contact
 
