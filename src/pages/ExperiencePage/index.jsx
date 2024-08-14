@@ -8,7 +8,7 @@ const ExperiencePage = () => {
       date: "2024",
       title: "Software Engineer Intern",
       location: "Chicago, Illinois",
-      company: "Finbud Software Company",
+      company: "Esmart Solution Agency",
       description: [
         "Developed a website integrated with AI to enhance user financial decision-making, including realtime stock price updates, personalized investment strategies, saving optimization, and smart expenditures planning.",
         "Created a backend server with authentication and database management to support the data analytics team, providing deep financial insights and educational resources."
