@@ -11,13 +11,13 @@ const Footer = () => {
           <FontAwesomeIcon icon={faChevronUp} />
       </Button>
       <div className="social-media">
-        <a href="https://www.linkedin.com/in/huyphung2025/">
+        <a href="https://www.linkedin.com/in/huyphung2025/" target='_blank'>
             <FontAwesomeIcon className="icon" icon={faLinkedin} />
         </a>
         <a href="mailto:huyphung3103@gmail.com">
             <FontAwesomeIcon className="icon" icon={faEnvelope} />
         </a>
-        <a href="https://github.com/hphng">
+        <a href="https://github.com/hphng" target='_blank'>
             <FontAwesomeIcon className="icon" icon={faSquareGithub} />
         </a>
       </div>

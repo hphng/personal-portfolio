@@ -92,10 +92,11 @@ const ProjectPage = () => {
                     disabled={project.live === 'NULL'}
                     href={project.live} 
                     className='btn-danger project-button project-live'
+                    target='_blank'
                   >
                     Live
                   </Button>
-                  <Button href={project.github} className='btn-primary project-button project-github'>Learn more</Button>
+                  <Button href={project.github} target="_blank" className='btn-primary project-button project-github'>Learn more</Button>
                 </Card.Body>
               </Card>
             </div>
