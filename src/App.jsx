@@ -52,8 +52,8 @@ function App() {
         <div className="main-content">
           <HomePage />
           <AboutPage />
-          <ExperiencePage />
           <ProjectPage />
+          <ExperiencePage />
           <ContactPage  />
         </div>
         <Footer />

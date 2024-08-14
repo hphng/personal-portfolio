@@ -21,7 +21,7 @@ import Switch from 'react-switch';
 
 const ToggleContent = ({toggle}) => {
   const size = 50;
-  if(toggle) {
+  if(!toggle) {
     return (
       <div className="skills-icon">
         <div className="skills-row">
