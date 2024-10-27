@@ -44,3 +44,22 @@
         height: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .skills-container {
+        margin-top: 50px;
+        position: relative;
+    }
+    .skills-toggle {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .skills-icon {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        overflow: hidden;
+        justify-content: center;
+    }
+  }

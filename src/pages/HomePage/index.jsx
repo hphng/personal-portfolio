@@ -20,9 +20,9 @@ const HomePage = () => {
           </div>
           <h2 className='home-job'>I am a
             <div className="home-words">
-              <span> Fullstack Developer.</span>
-              <span> Leetcode Enthusiast.</span>
-              <span> Competitive Programmer.</span>
+              <span> Fullstack Developer</span>
+              <span> Leetcode Enthusiast</span>
+              <span> Competitive Programmer</span>
             </div>
           </h2>
         </div>
