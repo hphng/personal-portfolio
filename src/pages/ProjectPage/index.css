@@ -188,12 +188,109 @@
     }
 }
 
-/* @media (max-width: 800px) {
-    .project-container {
-        display: flex;
-        flex-direction: column;
+/* Main responsive layout adjustments */
+@media (max-width: 800px) {
 
+    .project-header{
+        padding-left: 0;
+        text-align: center;
     }
-} */
+
+    /* Stack projects vertically and center-align them */
+    .project-container {
+        padding-top: 60px;
+    }
+    .project:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    /* Centering and resizing project showcase image */
+    .project-image-container {
+        width: 100%;
+        height: auto;
+        max-width: 40rem;
+        margin: 0 auto 20px;
+        background: none;
+    }
+
+    .project-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Center and resize project-info card */
+    .project-info {
+        width: 90%;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: static;
+        margin-top: 20px;
+        padding: 1rem;
+        box-shadow: none;
+        border: none;
+    }
+
+    /* Project text alignment and spacing */
+    .project-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .project-subtitle, .project-description {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Button adjustments */
+    .project-button {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .project-live {
+        margin-bottom: 10px;
+    }
+
+    .project-github {
+        margin-left: 0;
+    }
+}
+
+/* Further scaling down at smaller breakpoints */
+@media (max-width: 600px) {
+    .project-image-container {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .project-header {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 3rem;
+    }
+
+    .project-subtitle, .project-description {
+        font-size: 1.5rem;
+    }
+
+    /* Reduce button padding for smaller screens */
+    .project-button {
+        padding: 0.6rem;
+        font-size: 1.5rem;
+    }
+}
+
 
 
