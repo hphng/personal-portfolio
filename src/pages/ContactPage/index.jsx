@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './index.css'
 import { Form, Button, Alert } from 'react-bootstrap'
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
     const [email, setEmail] = useState('');
@@ -25,16 +26,33 @@ const ContactPage = () => {
         }
 
         // Simulate successful submission
-        setAlert({
-            show: true,
-            variant: 'success',
-            message: 'Message sent successfully!',
-        });
+        emailjs.sendForm(
+            import.meta.env.VITE_APP_EMAILJS_SERVICE_ID, // Use environment variables
+            import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+            "#form",
+            import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        ).then(
+            () => {
+                setAlert({
+                    show: true,
+                    variant: 'success',
+                    message: 'Message sent successfully!',
+                });
 
-        // Clear the form fields
-        setEmail('');
-        setMessage('');
-        setName('');
+                // Clear the form fields
+                setEmail('');
+                setMessage('');
+                setName('');
+            },
+            (error) => {
+                console.error('Failed to send message:', error);
+                setAlert({
+                    show: true,
+                    variant: 'danger',
+                    message: 'Failed to send message. Please try again later.',
+                });
+            }
+        );
     };
     useEffect(() => {
         if (alert.show) {
@@ -57,11 +75,12 @@ const ContactPage = () => {
                         {alert.message}
                     </Alert>
                 )}
-                <Form onSubmit={handleSubmit} className="contact-form">
+                <Form onSubmit={handleSubmit} className="contact-form" id="form">
                     <Form.Group controlId='formBasicMessage'>
                         <Form.Control
                             type='text'
                             placeholder='Name'
+                            name='from_name'
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
@@ -70,6 +89,7 @@ const ContactPage = () => {
                         <Form.Control
                             type='email'
                             placeholder='Email'
+                            name='from_email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
@@ -80,6 +100,7 @@ const ContactPage = () => {
                             as='textarea'
                             rows={6}
                             value={message}
+                            name='message'
                             placeholder='Message'
                             onChange={(e) => setMessage(e.target.value)}
                         />
