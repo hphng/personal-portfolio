@@ -36,7 +36,7 @@ const ProjectPage = () => {
                     The app allows users to create an account, create a chat room, 
                     and chat with their friends in real-time.`,
       source: chatBox,
-      live: 'NULL',
+      live: null,
       github: 'https://github.com/hphng/box_chat'
     },
     {
@@ -56,7 +56,7 @@ const ProjectPage = () => {
                     The app is built with HTML, CSS, p5.js and uses the camera to stream video. 
                     The photo is then converted to ASCII art using the ASCII art API.`,
       source: huyVideo,
-      live: 'NULL',
+      live: null,
       github: 'https://github.com/hphng/AsciiCam'
     }
   ]
