@@ -6,6 +6,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import { loadLightInteraction } from "@tsparticles/interaction-light"
 import { mainContentParticles } from './utils/tsParticlesOptions';
+import ReactGA from 'react-ga4';
 import LandingPage from './pages/LandingPage'
 import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage';
@@ -33,6 +34,13 @@ function App() {
           setInit(true);
       });
   }, []);
+
+  useEffect(() => {
+    const trackingId = import.meta.env.VITE_APP_GOOGLE_TRACKING_ID;
+    ReactGA.initialize(trackingId);
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+  
   const particlesLoaded = (container) => {
     console.log(container);
   };
