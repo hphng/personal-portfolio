@@ -7,34 +7,36 @@ const ExperiencePage = () => {
       id: "1",
       date: "2024",
       title: "Software Engineer Intern",
-      location: "Chicago, Illinois",
-      company: "Esmart Solution Agency",
+      location: "Remote - USA",
+      company: "Birdie AI Company - Startup",
       description: [
-        "Developed a website integrated with AI to enhance user financial decision-making, including realtime stock price updates, personalized investment strategies, saving optimization, and smart expenditures planning.",
-        "Created a backend server with authentication and database management to support the data analytics team, providing deep financial insights and educational resources."
+        "Developed an AI-driven prompt search system, with React and TypeScript, implementing Debounce techniques to reduce API calls and fuzzy string matching to enhance response accuracy and search effiency",
+        "Revamped the codebase system architecture to support more new product offrings and reducing bugs over 30%",
+        "Deployed backend infrastructure on AWS, utilizing AWS lambda, API Gateway, and SAM (Serverless Application Model) to optimize performance, reducing server costs by 45% through optimized resource allocation",
+        " Automated the deployment pipeline by creating a Bash Script to streamline backend production updates, reducing manual deployment time by 60% and minimizing errors"
       ]
     },
     {
       id: "2",
+      date: "2024",
+      title: "Software Engineer Team Lead",
+      location: "Chicago, Illinois",
+      company: "Finbud AI Compny - Startup",
+      description: [
+        "Developed a full-stack fiancial app using OpenAI APIs, Vue JS and Netlify to track stock on real-time, getpersonalized trade suggestions, and get fiancial guidance by AI Chatbot",
+        "Design a system with multi-threaded authentication flw using Passport.js, reducing authentication latency by 25%, and ensuring 99% reliability through integration testing of OAuth and JWT verifiation",
+        "Led a team of 15 to integrate Alpha Vantage and Polyon.io APIs, providing real-time fiancial market data of companies, which attracted key investment partner, and boosted user adoption by 40%",
+      ]
+    },
+    {
+      id: "3",
       date: "2023",
       title: "Software Engineer Intern",
       location: "Hanoi, Vietnam",
       company: "Tinh Van Software Organization",
       description: [
-        "Increased user engagement by 30% and optimized website performance through a strategic migration to the Next.js framework.",
-        "Developed a microservices backend utilizing REST APIs, applying the MVC pattern with JavaScript, MongoDB, Redis, and Docker for optimal scalability and maintainability."
-      ]
-    },
-    {
-      id: "3",
-      date: "2022",
-      title: "Full-stack Engineer Intern",
-      location: "Hanoi, Vietnam",
-      company: "FPT Software Company",
-      description: [
-        "Spearheaded the development of back-end for a prototype website by utilizing Node.js and conducted rigorous testing with Postman to ensure optimal performance and functionality.",
-        "Designed and distributed embedded databases using pgAdmin4 and psql, reducing the deploy time by 30%.",
-        "Guided a team of three developers to implement the front-end, steering the website towards modernization through React and ensuring a cohesive and user-friendly interface."
+        "Achieved a 30% boost in user engagement, quantifid by increased interaction, through a strategic migration to Next.js and WebSocket, enhancing the website interface and interactive UI elements",
+        "Developed a scalable microservices backend utilizing RabbitMQ for asynchronous messaging, leading to 20% API response effiency, and enhancing system with MongoDB indexing, Redis caching, and Docker container",
       ]
     }
   ];
