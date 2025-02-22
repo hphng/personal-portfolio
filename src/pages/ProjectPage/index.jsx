@@ -6,9 +6,19 @@ import finbud from '../../assets/projects/finbud.png'
 import musicApp from '../../assets/projects/music-app.png'
 import businessCard from '../../assets/projects/bussiness-card.png'
 import chatBox from '../../assets/projects/chat-box.png'
+import NoteScribe from '../../assets/projects/notescribe.png'
 
 const ProjectPage = () => {
   const projects = [
+    {
+      title: 'NoteScribe',
+      subtitle: 'Financial website',
+      description: `DePauw NoteScribe is a senior project web application that transcribes and translates MP3 audio files 
+                    and enhances accessibility for academic environments`,
+      source: NoteScribe,
+      live: 'https://notetranscribe.vercel.app/',
+      github: 'https://github.com/hphng/NoteScribe'
+    },
     {
       title: 'Finbud',
       subtitle: 'Financial website',
@@ -16,7 +26,7 @@ const ProjectPage = () => {
                     Built with Vue.js, Node.js, Express.js, and MongoDB. The website allows users to create an account, 
                     add stocks to their watchlist, and view the stock's information.`,
       source: finbud,
-      live: 'https://finbud-ai.netlify.app',
+      live: 'https://finbud.pro/',
       github: 'https://github.com/finbud2024/Finbud'
     },
     {
@@ -88,9 +98,9 @@ const ProjectPage = () => {
                   <Card.Title className='project-title'>{project.title}</Card.Title>
                   <Card.Subtitle className="project-subtitle">{project.subtitle}</Card.Subtitle>
                   <Card.Text className="project-description">{project.description}</Card.Text>
-                  <Button 
+                  <Button
                     disabled={project.live === 'NULL'}
-                    href={project.live} 
+                    href={project.live}
                     className='btn-danger project-button project-live'
                     target='_blank'
                   >
