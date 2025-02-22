@@ -1,11 +1,12 @@
-# SWE Internship Portfolio
+# SWE Portfolio
 
 Welcome to my Software Engineering Internship Portfolio! This repository showcases the work, projects, and experiences I've gained during my software engineering internship. It highlights the technical skills I've developed, the challenges I've overcome, and the contributions I've made to various projects!
 
 ## Portfolio Content
 - About me & Skills
 - Projects
-    - Finbud - a financial website
+    - NoteScribe - a speech to text application
+    - Finbud - an AI-powered financial website
     - Melify - a music app
     - Box chat - a real-time chat application
     - AsciiCam - a camera prototype project
