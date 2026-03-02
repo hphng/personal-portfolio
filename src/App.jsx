@@ -17,30 +17,38 @@ import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
 
 function App() {
-  const [ init, setInit ] = useState(false);
+  const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
   useEffect(() => {
-      initParticlesEngine(async (engine) => {
-          // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-          // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-          // starting from v2 you can add only the features you need reducing the bundle size
-          // await loadAll(engine);
-          await loadLightInteraction(tsParticles);
-          await loadFull(engine);
-          // await loadSlim(engine);
-          //await loadBasic(engine);
-      }).then(() => {
-          setInit(true);
-      });
+    initParticlesEngine(async (engine) => {
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      // await loadAll(engine);
+      await loadLightInteraction(tsParticles);
+      await loadFull(engine);
+      // await loadSlim(engine);
+      //await loadBasic(engine);
+    }).then(() => {
+      setInit(true);
+    });
   }, []);
 
   useEffect(() => {
-    const trackingId = import.meta.env.VITE_APP_GOOGLE_TRACKING_ID;
-    ReactGA.initialize(trackingId);
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    try {
+      const trackingId = import.meta.env.VITE_APP_GOOGLE_TRACKING_ID;
+      if (!trackingId) {
+        console.warn('VITE_APP_GOOGLE_TRACKING_ID not set — skipping Google Analytics initialization.');
+        return;
+      }
+      ReactGA.initialize(trackingId);
+      ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    } catch (err) {
+      console.warn('Google Analytics initialization failed:', err);
+    }
   }, []);
-  
+
   const particlesLoaded = (container) => {
     console.log(container);
   };
@@ -62,7 +70,7 @@ function App() {
           <AboutPage />
           <ProjectPage />
           <ExperiencePage />
-          <ContactPage  />
+          <ContactPage />
         </div>
         <Footer />
       </div>
