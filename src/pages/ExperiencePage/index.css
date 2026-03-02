@@ -61,12 +61,13 @@
     content: attr(date);
     position: absolute;
     left: -30%;
-    top: 15px;
+    top: 25px;
     transition: transform 0.5s ease;
-    /* color: rgba(255,255,255,0.4); */
     color: rgba(252,176,69,1);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    /* border: 2px solid red; */
+    width: 150px;
 }
 
 .job:hover::before {
@@ -130,8 +131,9 @@
     }
 
     .job::before {
-        left: -27%;
-        padding: 0;
+        position: inherit;
+        left: 0;
+        top: 0;
     }
 
     .job:hover::before {
