@@ -7,17 +7,26 @@ import musicApp from '../../assets/projects/music-app.png'
 import businessCard from '../../assets/projects/bussiness-card.png'
 import chatBox from '../../assets/projects/chat-box.png'
 import NoteScribe from '../../assets/projects/notescribe.png'
+import Valentine from '../../assets/projects/valentine.png'
 
 const ProjectPage = () => {
   const projects = [
     {
       title: 'NoteScribe',
-      subtitle: 'Financial website',
+      subtitle: 'AI-powered audio transcription',
       description: `DePauw NoteScribe is a senior project web application that transcribes and translates MP3 audio files 
                     and enhances accessibility for academic environments`,
       source: NoteScribe,
       live: 'https://notetranscribe.vercel.app/',
       github: 'https://github.com/hphng/NoteScribe'
+    },
+    {
+      title: 'Valentine',
+      subtitle: 'Valentine day for my babii',
+      description: `A Valentine day project for my babii, built with React.js and Node.js. The project is a simple website that allows users to send a Valentine day message to their loved ones. The website also has a feature that allows users to create a personalized Valentine day card.`,
+      source: Valentine,
+      live: 'https://valentineformybabii.netlify.app/',
+      github: 'https://github.com/hphng/my-valentine-archive'
     },
     {
       title: 'Finbud',
